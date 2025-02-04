@@ -200,9 +200,9 @@ nav {
   box-shadow: 0px 10px 50px rgba(255, 0, 0, 0.5); /* Added red box shadow */
 
   position: relative;
-  width: 90%;
-  max-width: 800px;
-  margin: 20px auto;
+  width: 100%;
+  max-width: 1100px;
+  margin: 70px auto;
   background: #0f0f0f;
   border-radius: 16px;
   overflow: hidden;
@@ -310,6 +310,47 @@ iframe {
 .left-text a:hover {
   border-color: #ff0000;
 }
+
+@media (max-width: 768px) {
+  .bottom-part {
+    display: block;
+    
+  }
+  .video-wrapper{
+    margin-bottom: 60px;
+  }
+  header .title {
+    display: none;
+  }
+  .right-icons {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    left: 25px;
+  }
+  .right-icons {
+    position: relative;
+    top: -100px;
+    padding-right: 0px;
+}
+  .right-icons ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .left-text {
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
 /* about */
 .about-container {
   position: relative; /* Add this to contain the pseudo-element */
@@ -468,6 +509,9 @@ iframe {
   .about-content {
     flex-direction: column;
     padding: 0 20px;
+  }
+  .main-content{
+       margin-bottom: 120px;
   }
 
   .image-column {
